@@ -1,0 +1,99 @@
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textmain {
+    max-width: 31.25rem;
+    font-size: 3.5625rem;
+    font-weight: 300;
+    line-height: 4.1875rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+
+.content-container span{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.content-container img{
+    height: 25%;
+}
+.student-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.student-container img{
+    height: 60%;
+}
+
+
+.cursos{
+    display: flex;
+    gap: 40px;
+    width: 25%;
+    height: 37rem;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.container-link{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-opaco);
+    box-shadow: 20px 20px 7px var(--secondary-curso);
+    width: 100%;
+    height: 100%;
+}
+
+.container-link:hover{
+    box-shadow: 20px 20px 7px var(--secondary-color);
+}
+
+.link{
+    font-size: clamp(1rem, 5vw, 4rem);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursos img {
+    height: 120px;
+}
+
+@media (max-width:768px){
+    main{
+        flex-direction: column;
+    }
+    .student-container{
+        display: none;
+    }
+    .content-container{
+        font-size: 2rem;
+        width: 100%;
+    }
+}
